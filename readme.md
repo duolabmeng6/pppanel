@@ -2,6 +2,8 @@
 
 PPPanel 是一个功能强大、界面美观的 Docker 容器管理工具。它提供了直观的 Web 界面， 让您可以轻松管理 Docker 容器、镜像、网络和存储卷。无论您是开发者还是运维工程师， PPPanel 都能帮助您提高工作效率。
 
+PPPanel 官方网址: https://www.pppanel.com/
+
 # 功能介绍
 
 ## 操作界面
