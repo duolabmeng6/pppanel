@@ -5,22 +5,25 @@ PPPanel 是一个功能强大、界面美观的 Docker 容器管理工具。它�
 # 功能介绍
 
 ## 操作界面
-![image.png](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/01176728-8fc6-4702-ad11-cf851ac367b4.png '操作界面')
+![image.png](./assets/01176728-8fc6-4702-ad11-cf851ac367b4-20250903111635080.png '操作界面')
 
 ## 应用文件管理
-![image.png](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/0da69d0f-35e8-4cbf-9f46-3f9708a23497.png '应用文件管理')
+![image.png](./assets/0da69d0f-35e8-4cbf-9f46-3f9708a23497-20250903111637193.png '应用文件管理')
 
 ## 应用日志和多终端操作
-![image.png](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/e939060e-18ed-49e2-956f-2ee63b9ba6eb.png '应用日志和多终端操作')
+![image.png](./assets/e939060e-18ed-49e2-956f-2ee63b9ba6eb-20250903111637173.png '应用日志和多终端操作')
 
 ## 应用商店
-![image.png](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/f7f62e78-f378-4664-8860-4cdb083c74ce.png '应用商店')
+![image.png](./assets/f7f62e78-f378-4664-8860-4cdb083c74ce-20250903111637920.png '应用商店')
 
 ## 镜像管理
-![image.png](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/c77101cf-c8d3-4ab2-b673-6b601db03b69.png '镜像管理')
+![image.png](./assets/c77101cf-c8d3-4ab2-b673-6b601db03b69-20250903111633581.png '镜像管理')
 
 ## 计划任务
-![image.png](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/a16f6ba5-da13-4b38-aafe-1cbf9beffd27.png '计划任务')
+![image.png](./assets/a16f6ba5-da13-4b38-aafe-1cbf9beffd27-20250903111631712.png '计划任务')
+
+
+
 
 
 # PPPanel 安装指南
@@ -83,24 +86,30 @@ curl -fsSL https://www.pppanel.com/install.sh -o install.sh && bash install.sh
 
 现在，您已经成功部署了 PPPanel！可以开始享受它带来的便捷容器管理体验了。如果想了解如何使用面板的各项功能，请参考创建第一个应用。
 
+
+
+
+
+
+
 # 使用 PPPanel 创建第一个静态页面应用
 
 # 第一步创建应用
 进入面板 点击 [新增应用] 选择应用中心
-![image.png](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/1e338125-4233-4e14-b991-51ec836a8f4b.png 'image.png')
+![image.png](./assets/1e338125-4233-4e14-b991-51ec836a8f4b.png 'image.png')
 
 # 第二步应用商店配置应用信息
 
 应用中心中选择 caddy 应用
 
-![image.png](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/7794dd8c-db6a-4c25-8d1a-18290937d9b9.png 'image.png')
+![image.png](./assets/7794dd8c-db6a-4c25-8d1a-18290937d9b9.png 'image.png')
 
 我们可以配置访问的端口信息
 
 点击部署
 
 # 第三步部署成功
-![image.png](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/b611fc68-3fa4-445b-ae61-a5b2d6d2f62c.png 'image.png')
+![image.png](./assets/b611fc68-3fa4-445b-ae61-a5b2d6d2f62c.png 'image.png')
 
 访问服务器
 http://访问服务器ip地址:10009/
@@ -110,4 +119,9 @@ http://访问服务器ip地址:10009/
 如果没用成功你可以到云服务商的防火墙中放行端口
 
 # 第四步上传你的HTML代码
-![image.png](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/4988b2d1-57b0-42e5-b5c0-f7c9e0534738.png 'image.png')
+![image.png](./assets/4988b2d1-57b0-42e5-b5c0-f7c9e0534738.png 'image.png')
+
+
+
+
+
