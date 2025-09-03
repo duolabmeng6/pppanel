@@ -1,26 +1,113 @@
-# PPPanel: 现代化的 Docker 容器管理面板
+# PPPanel 现代化的 Docker 容器管理面板
 
-PPPanel 是一款功能强大、界面美观的 Docker 容器管理工具。它提供了直观的 Web 界面，让您可以轻松管理 Docker 容器、镜像、网络和存储卷。无论您是开发者还是运维工程师，PPPanel 都能帮助您提高工作效率。
+PPPanel 是一个功能强大、界面美观的 Docker 容器管理工具。它提供了直观的 Web 界面， 让您可以轻松管理 Docker 容器、镜像、网络和存储卷。无论您是开发者还是运维工程师， PPPanel 都能帮助您提高工作效率。
 
----
+# 功能介绍
 
-## 主要功能介绍
+## 操作界面
+![image.png](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/01176728-8fc6-4702-ad11-cf851ac367b4.png '操作界面')
 
-### 1. 操作界面
-!操作界面 [<sup>2</sup>](https.api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/01176728-8fc6-4702-ad11-cf851ac367b4.png)
+## 应用文件管理
+![image.png](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/0da69d0f-35e8-4cbf-9f46-3f9708a23497.png '应用文件管理')
 
-### 2. 应用文件管理
-!应用文件管理 [<sup>3</sup>](https.api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/0da69d0f-35e8-4cbf-9f46-3f9708a23497.png)
+## 应用日志和多终端操作
+![image.png](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/e939060e-18ed-49e2-956f-2ee63b9ba6eb.png '应用日志和多终端操作')
 
-### 3. 应用日志和多终端操作
-![应用日志和多终端操作](https.api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/e939060e-18ed-49e2-956f-2ee63b9ba6eb.png)
+## 应用商店
+![image.png](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/f7f62e78-f378-4664-8860-4cdb083c74ce.png '应用商店')
 
-### 4. 应用商店
-!应用商店 [<sup>4</sup>](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/f7f62e78-f378-4664-8860-4cdb083c74ce.png)
+## 镜像管理
+![image.png](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/c77101cf-c8d3-4ab2-b673-6b601db03b69.png '镜像管理')
 
-### 5. 镜像管理
-!镜像管理 [<sup>5</sup>](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/c77101cf-c8d3-4ab2-b673-6b601db03b69.png)
+## 计划任务
+![image.png](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/a16f6ba5-da13-4b38-aafe-1cbf9beffd27.png '计划任务')
 
-### 6. 计划任务
-!计划任务 [<sup>6</sup>](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/a16f6ba5-da13-4b38-aafe-1cbf9beffd27.png)
 
+# PPPanel 安装指南
+
+本指南将帮助您完成 PPPanel 的安装和初步设置，让您快速开始使用这个现代化的 Docker 容器管理面板。
+
+
+### 1. 系统要求
+
+在开始之前，请确保您的服务器满足以下条件：
+
+-   一台拥有 `root` 或 `sudo` 权限的 Linux 服务器（推荐使用 Ubuntu, Debian, 或 CentOS）。
+-   稳定的网络连接。
+-   建议至少 1GB 内存和 10GB 硬盘空间。
+
+### 2. 第一步：安装 Docker
+
+PPPanel 是基于 Docker 的，因此您需要先在服务器上安装 Docker。如果您尚未安装，可以使用 Docker 官方提供的一键安装脚本来快速完成。
+
+**通过 SSH 连接到您的服务器，然后执行以下命令：**
+
+```bash
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+```
+
+这个脚本会自动检测您的 Linux 发行版并安装最新稳定版的 Docker。
+
+安装完成后，您可以运行以下命令来验证 Docker 是否成功安装并正在运行：
+
+```bash
+docker --version
+```
+
+如果能看到版本号输出，说明 Docker 已准备就绪。
+
+### 3. 第二步：安装 PPPanel
+
+安装好 Docker 后，您只需一条命令即可安装 PPPanel。
+
+**继续在您的服务器终端中执行以下命令：**
+
+```bash
+curl -fsSL https://www.pppanel.com/install.sh -o install.sh && bash install.sh
+```
+
+**这个脚本会做什么？**
+
+-   **快速安装**: 自动从镜像仓库拉取 PPPanel 所需的 Docker 镜像。
+-   **自动配置**: 智能检测您的服务器环境，并完成基础配置。
+-   **即刻使用**: 安装过程非常迅速，完成后您就可以立即开始使用。
+
+安装脚本执行完毕后，会显示访问面板所需的端口号和初始登录信息，请留意终端的输出。
+
+### 4. 访问和使用
+
+安装成功后，打开您的浏览器，输入 `http://<您的服务器IP地址>:15001` 即可访问 PPPanel 的登录界面。
+
+例如，如果您的服务器 IP 是 `192.168.1.100`，安装后提示的端口是 `15001`，那么您就在浏览器中访问 `http://192.168.1.100:15001`。
+
+现在，您已经成功部署了 PPPanel！可以开始享受它带来的便捷容器管理体验了。如果想了解如何使用面板的各项功能，请参考创建第一个应用。
+
+# 使用 PPPanel 创建第一个静态页面应用
+
+# 第一步创建应用
+进入面板 点击 [新增应用] 选择应用中心
+![image.png](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/1e338125-4233-4e14-b991-51ec836a8f4b.png 'image.png')
+
+# 第二步应用商店配置应用信息
+
+应用中心中选择 caddy 应用
+
+![image.png](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/7794dd8c-db6a-4c25-8d1a-18290937d9b9.png 'image.png')
+
+我们可以配置访问的端口信息
+
+点击部署
+
+# 第三步部署成功
+![image.png](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/b611fc68-3fa4-445b-ae61-a5b2d6d2f62c.png 'image.png')
+
+访问服务器
+http://访问服务器ip地址:10009/
+
+就看到访问成功啦 
+
+如果没用成功你可以到云服务商的防火墙中放行端口
+
+# 第四步上传你的HTML代码
+![image.png](https://api.pppanel.com/storage/attachments/admin_1/image/2025-09-02/4988b2d1-57b0-42e5-b5c0-f7c9e0534738.png 'image.png')
